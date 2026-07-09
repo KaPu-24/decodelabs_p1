@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Nexon — Minimal infrastructure for modern engineering teams. Scalable compute, edge networking, and observability unified in one platform.">
+  <title>Nexon — Modern Infrastructure Platform</title>
+  <link rel="stylesheet" href="master.css">
+</head>
+
+<body class="page">
+
+  <!-- header with nav -->
+  <header class="header" role="banner">
+    <div class="header__inner page__container">
+
+      <a href="index.html" class="header__logo" aria-label="Nexon homepage">
+        <span class="header__logo-mark" aria-hidden="true"></span>
+        Nexon
+      </a>
+
+      <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+        &#9776;
+      </button>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav__list" role="list" id="primary-nav">
+          <li><a href="#solutions" class="nav__link nav__link--active">Solutions</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- hero section -->
+    <section class="hero page__container" aria-labelledby="hero-heading">
+      <span class="hero__eyebrow">
+        <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+        Now in General Availability
+      </span>
+
+      <h1 class="hero__title" id="hero-heading">
+        Infrastructure built for
+        <span class="hero__title-accent">modern engineering</span>
+      </h1>
+
+      <p class="hero__subtitle">
+        Scalable compute, edge networking, and real-time observability
+        — unified in a single platform designed to ship faster.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary">Get Started</a>
+        <a href="#solutions" class="btn btn--outline">Explore Solutions</a>
+      </div>
+    </section>
+
+    <!-- solutions / features -->
+    <section class="section page__container" aria-labelledby="solutions-heading" id="solutions">
+      <div class="section__header">
+        <span class="section__label">Solutions</span>
+        <h2 class="section__title" id="solutions-heading">Everything you need to deploy at scale</h2>
+        <p class="section__description">
+          Three core pillars that eliminate operational complexity
+          and let your team focus on building product.
+        </p>
+      </div>
+
+      <div class="features__grid">
+
+        <article class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">&#9881;</div>
+          <h3 class="feature-card__title">Elastic Compute</h3>
+          <p class="feature-card__text">
+            Auto-scaling containers and serverless functions that respond
+            to traffic in milliseconds. Pay only for what you use.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">&#9889;</div>
+          <h3 class="feature-card__title">Edge Network</h3>
+          <p class="feature-card__text">
+            A global mesh of 280+ edge nodes that routes requests to the
+            nearest origin, cutting latency to single-digit milliseconds.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-card__icon" aria-hidden="true">&#9783;</div>
+          <h3 class="feature-card__title">Observability</h3>
+          <p class="feature-card__text">
+            Unified logs, metrics, and traces with AI-powered anomaly
+            detection — so you know before your users do.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section class="section page__container" id="about" aria-labelledby="about-heading">
+      <div class="about__layout">
+
+        <article class="about__content">
+          <h2 class="about__heading" id="about-heading">Built by engineers, for engineers</h2>
+          <p class="about__text">
+            Nexon was founded on a simple conviction: infrastructure should
+            disappear into the background. Teams should spend their time
+            writing features, not wrestling with deployment pipelines.
+          </p>
+          <p class="about__text">
+            Our platform compiles years of distributed-systems research into
+            opinionated defaults that work out of the box — while remaining
+            fully configurable for advanced use cases.
+          </p>
+
+          <!-- placeholder image, will replace with real screenshot later -->
+          <div class="about__image-wrapper">
+            <picture>
+              <source
+                srcset="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='720' height='360' fill='%23181c24'%3E%3Crect width='720' height='360' rx='10'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%2345505f' font-family='sans-serif' font-size='18'%3E720 %C3%97 360 — Platform Dashboard Preview%3C/text%3E%3C/svg%3E"
+                type="image/svg+xml">
+              <img class="about__image"
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='720' height='360' fill='%23181c24'%3E%3Crect width='720' height='360' rx='10'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%2345505f' font-family='sans-serif' font-size='18'%3E720 %C3%97 360 — Platform Dashboard Preview%3C/text%3E%3C/svg%3E"
+                alt="Screenshot of the Nexon platform dashboard showing real-time infrastructure metrics and deployment status"
+                width="720" height="360" loading="lazy">
+            </picture>
+          </div>
+        </article>
+
+        <aside class="stats-panel" aria-label="Key statistics">
+          <h3 class="stats-panel__title">By the Numbers</h3>
+          <ul class="stats-panel__list" role="list">
+            <li class="stat">
+              <span class="stat__value">280+</span>
+              <span class="stat__label">Global Edge Nodes</span>
+            </li>
+            <li class="stat">
+              <span class="stat__value">99.99%</span>
+              <span class="stat__label">Uptime SLA</span>
+            </li>
+            <li class="stat">
+              <span class="stat__value">12ms</span>
+              <span class="stat__label">Avg. Response Time</span>
+            </li>
+            <li class="stat">
+              <span class="stat__value">4,200+</span>
+              <span class="stat__label">Teams Onboarded</span>
+            </li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="section page__container" id="contact" aria-labelledby="contact-heading">
+      <div class="contact__layout">
+
+        <div class="contact__info">
+          <h2 class="contact__heading" id="contact-heading">Let's talk</h2>
+          <p class="contact__text">
+            Whether you're evaluating platforms or ready to migrate,
+            our engineering team is here to help you plan the transition.
+          </p>
+          <p class="contact__detail">
+            <span class="contact__detail-icon" aria-hidden="true">&#9993;</span>
+            hello@nexon.dev
+          </p>
+          <p class="contact__detail">
+            <span class="contact__detail-icon" aria-hidden="true">&#9742;</span>
+            +1 (555) 012-3456
+          </p>
+        </div>
+
+        <form class="form" aria-label="Contact form" action="#" method="post">
+          <div class="form__group">
+            <label class="form__label" for="contact-name">Full Name</label>
+            <input class="form__input" type="text" id="contact-name" name="name" required autocomplete="name"
+              placeholder="Ada Lovelace">
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="contact-email">Email Address</label>
+            <input class="form__input" type="email" id="contact-email" name="email" required autocomplete="email"
+              placeholder="ada@example.com">
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="contact-message">Message</label>
+            <textarea class="form__textarea" id="contact-message" name="message" required
+              placeholder="Tell us about your infrastructure needs…"></textarea>
+          </div>
+          <button class="btn btn--primary" type="submit">Send Message</button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner page__container">
+      <p>&copy; 2026 Built by Kashik (ID: 2K24CSUN01289) for DecodeLabs. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer__links" role="list">
+          <li><a href="#" class="footer__link">Privacy</a></li>
+          <li><a href="#" class="footer__link">Terms</a></li>
+          <li><a href="#" class="footer__link">Status</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- mobile nav toggle -->
+  <script>
+    (function () {
+      const toggle = document.querySelector('.nav__toggle');
+      const navList = document.querySelector('.nav__list');
+      if (!toggle || !navList) return;
+
+      toggle.addEventListener('click', function () {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!expanded));
+        navList.classList.toggle('nav__list--open');
+      });
+    })();
+  </script>
+
+</body>
+
+</html>
